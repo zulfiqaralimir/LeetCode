@@ -34,6 +34,3 @@ a great place to seek assistance from the community, whether you're looking for 
 Remember, the goal is not just to find the correct solution but also to understand
 the underlying concepts and improve your problem-solving skills. Take it one step at a time, and don't rush through the learning process.
 ```
-
-This Markdown formatted text can be used in various platforms that support Markdown formatting, 
-such as GitHub, Reddit, and various note-taking applications. Let me know if you need further assistance!
