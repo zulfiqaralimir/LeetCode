@@ -124,3 +124,86 @@ Let's take the example array `nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]` and perfor
 ### Conclusion
 
 The function returns `6`, which is the maximum sum of any contiguous subarray in the given example. The dry run confirms that the code correctly implements Kadane's Algorithm, efficiently finding the maximum subarray sum by maintaining running totals and resetting when necessary.
+
+
+
+
+__WITHOUT DRY RUN__
+
+Sure! Let's break down the provided code without performing a detailed dry run. Instead, we'll focus on explaining the overall logic and purpose of each part of the code.
+
+Here's the given code again:
+
+```python
+from typing import List
+
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        maxSum = float('-inf')
+        currentSum = 0
+
+        for num in nums:
+            currentSum += num
+
+            if currentSum > maxSum:
+                maxSum = currentSum
+
+            if currentSum < 0:
+                currentSum = 0
+
+        return maxSum
+```
+
+### Explanation
+
+The goal of the function `maxSubArray` is to find the maximum sum of a contiguous subarray within a given array of integers `nums`. This problem is efficiently solved using Kadane's Algorithm. Let's break down each component of the code:
+
+1. **Initialization**:
+   ```python
+   maxSum = float('-inf')
+   currentSum = 0
+   ```
+   - `maxSum` is initialized to negative infinity to ensure that any sum from the array will be larger.
+   - `currentSum` is initialized to 0, representing the current sum of the subarray being considered.
+
+2. **Iteration through the array**:
+   ```python
+   for num in nums:
+       currentSum += num
+   ```
+   - The code iterates over each element `num` in the array `nums`.
+   - In each iteration, `num` is added to `currentSum`, updating the sum of the current subarray.
+
+3. **Update `maxSum`**:
+   ```python
+   if currentSum > maxSum:
+       maxSum = currentSum
+   ```
+   - After updating `currentSum`, the code checks if `currentSum` is greater than `maxSum`.
+   - If it is, `maxSum` is updated to the value of `currentSum`.
+   - This ensures that `maxSum` always holds the largest sum encountered so far.
+
+4. **Reset `currentSum` if necessary**:
+   ```python
+   if currentSum < 0:
+       currentSum = 0
+   ```
+   - If `currentSum` becomes negative, it is reset to 0.
+   - This reset is crucial because a negative sum would decrease the sum of any subsequent subarray. Starting fresh with a sum of 0 allows for potentially larger sums in future iterations.
+
+5. **Return the result**:
+   ```python
+   return maxSum
+   ```
+   - After iterating through all elements of `nums`, the function returns `maxSum`, which contains the maximum sum of any contiguous subarray found.
+
+### Summary
+
+- **Kadane's Algorithm**: This algorithm is designed to solve the maximum subarray problem with a linear time complexity \(O(n)\).
+- **Key Steps**:
+  1. **Accumulate**: Add each element to `currentSum`.
+  2. **Track Maximum**: Update `maxSum` whenever `currentSum` exceeds it.
+  3. **Reset When Necessary**: Reset `currentSum` to 0 if it becomes negative.
+- **Final Result**: The value of `maxSum` at the end of the iteration is the maximum sum of any contiguous subarray within the input array `nums`.
+
+This code efficiently finds the maximum subarray sum using a single pass through the array, ensuring optimal performance.
