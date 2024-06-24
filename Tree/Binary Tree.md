@@ -1,11 +1,11 @@
 ![image](https://github.com/zulfiqaralimir/LeetCode/assets/68346772/4cd61c03-7a1f-45ee-9f9f-9e96a972523d)
 ## Binary Tree
-Node Structure
+### Node Structure
 Each node in a binary tree contains three components:
 
-Value: The data stored in the node.
-Left Child: A reference to the left child node.
-Right Child: A reference to the right child node.
+* Value: The data stored in the node.
+* Left Child: A reference to the left child node.
+* Right Child: A reference to the right child node.
 
 
 
