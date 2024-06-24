@@ -1,12 +1,22 @@
 ![image](https://github.com/zulfiqaralimir/LeetCode/assets/68346772/4cd61c03-7a1f-45ee-9f9f-9e96a972523d)
 ## Binary Tree
 ### Node Structure
-Why Binary Trees?
+### Why Binary Trees?
 * Efficient Data Storage: Enables fast searching, inserting, and deleting data.
 * Decision Trees: Used in machine learning for *making choices.*
 * Expression Evaluation: Represents mathematical expressions or code.
+### Example: Family Tree
+Think of your family tree:
 
+* Grandparents: Root node
+* Parents: Children of grandparents
+* You and Siblings: Leaf nodes
 
+### Key Terms
+* Parent: Node directly above.
+* Child: Nodes directly below.
+* Sibling: Nodes with the same parent.
+* Level: A node's depth (root is level 0).
 
 I have given a lot of Interviews in Top Product Based Companies and found out Trees to be one of the most important Data Structure.
 
