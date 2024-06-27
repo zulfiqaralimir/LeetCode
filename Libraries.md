@@ -73,4 +73,8 @@ for word in words:
 
 print(word_count)  # Output: defaultdict(<class 'int'>, {'apple': 3, 'banana': 2, 'orange': 1})
 
+```
 
+Here, you don't need to worry about checking if the word is already in the dictionary. If it's not, defaultdict automatically creates it with a default value of 0.
+
+In summary, defaultdict is a handy tool that simplifies working with dictionaries by automatically handling missing keys with default values you specify.
