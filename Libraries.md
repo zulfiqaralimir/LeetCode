@@ -10,13 +10,14 @@ A dictionary subclass for counting *hashable objects*. It's useful for counting 
 from collections import Counter
 
 cnt = Counter(['red', 'blue', 'red', 'green', 'blue', 'blue'])
-print(cnt)  # Output: Counter({'blue': 3, 'red': 2, 'green': 1})```
+print(cnt)  # Output: Counter({'blue': 3, 'red': 2, 'green': 1})
+
 
 ### `defaultdict`
 A dictionary subclass that calls a *factory function* to supply *missing values*.
 
-```from collections import defaultdict
+from collections import defaultdict
 
 dd = defaultdict(int)
 dd['key1'] += 1
-print(dd)  # Output: defaultdict(<class 'int'>, {'key1': 1})```
+print(dd)  # Output: defaultdict(<class 'int'>, {'key1': 1})
