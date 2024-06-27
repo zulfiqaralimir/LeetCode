@@ -58,3 +58,19 @@ print(od)  # Output: OrderedDict([('a', 1), ('b', 2), ('c', 3)])
 ```
 
 Using these specialized data structures can often make your solutions more efficient and readable, especially for problems involving counting elements, maintaining order, or implementing queues.
+
+```
+```
+### defaultdict in Simple Terms
+```
+from collections import defaultdict
+
+words = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
+word_count = defaultdict(int)
+
+for word in words:
+    word_count[word] += 1
+
+print(word_count)  # Output: defaultdict(<class 'int'>, {'apple': 3, 'banana': 2, 'orange': 1})
+
+
