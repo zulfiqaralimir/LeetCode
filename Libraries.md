@@ -83,13 +83,13 @@ In summary, defaultdict is a handy tool that simplifies working with dictionarie
 * In a defaultdict(int), if you access a key that doesn’t exist, it automatically creates that key and sets its value to 0 
 * Without defaultdict, you would need to check if the key exists first:
 
-  Visual Explanation
+### Visual Explanation
 Regular Dictionary:
 
 You must manually check if a key exists and create it if it doesn’t.
 defaultdict:
 
 Automatically creates a key with a default value if the key doesn’t exist.
-Summary
+### Summary
 defaultdict simplifies your code by automatically creating keys with default values when you access or modify a missing key.
 This avoids the need to check if the key exists before using it.
