@@ -14,3 +14,9 @@ print(cnt)  # Output: Counter({'blue': 3, 'red': 2, 'green': 1})
 
 ### `defaultdict`
 A dictionary subclass that calls a *factory function* to supply *missing values*.
+
+from collections import defaultdict
+
+dd = defaultdict(int)
+dd['key1'] += 1
+print(dd)  # Output: defaultdict(<class 'int'>, {'key1': 1})
