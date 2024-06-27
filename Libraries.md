@@ -58,6 +58,3 @@ print(od)  # Output: OrderedDict([('a', 1), ('b', 2), ('c', 3)])
 ```
 
 Using these specialized data structures can often make your solutions more efficient and readable, especially for problems involving counting elements, maintaining order, or implementing queues.
-```
-
-
