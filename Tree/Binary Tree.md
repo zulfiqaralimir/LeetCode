@@ -1,3 +1,6 @@
+[How to solve (almost) any binary tree coding problem](https://www.youtube.com/watch?v=s2Yyk3qdy3o&t=7s)
+
+
 ![image](https://github.com/zulfiqaralimir/LeetCode/assets/68346772/4cd61c03-7a1f-45ee-9f9f-9e96a972523d)
 ## Binary Tree
 ### Node Structure
